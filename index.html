@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+</head>
+<style>
+    body{
+        padding: 0;
+        margin: 0;
+      
+			zoom: 50%; /* Scale the element by 150% */
+		
+    }
+    .document-versions form{
+        display: flex;
+        flex-wrap: nowrap;
+        
+    }
+    .document-versions{
+       float: right;
+      
+    }
+    .item{
+        padding: 20px;
+    }
+    .header{
+        display: flex;
+        justify-content: center;
+    }
+    .logo{
+        background-color: rgb(0, 0, 0);
+        color: aliceblue;
+       height: 300px;
+        margin-top: 50px;
+        width: 100%;
+        border-radius: 40px 999em 999em 40px;
+        margin-right: 200px;
+        }
+        .logo .heading{
+         margin-top: 220px;
+         font-size: 30px;
+        }
+    .contact{
+        background-color: rgb(249, 0, 0);
+       height: 150px;
+        margin-top: 50px;
+        width: 70%;
+        border-radius: 0px 00px 0px 100px ;
+        position: absolute;
+        right: 0px;
+    }
+    .contact-inner{
+        height: 120px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+</style>
+<body>
+    <div class="document-versions">
+        <form action="/action_page.php" class="document-versions">
+            <div class="item">
+                <input type="checkbox" id="original" name="original" value="original">
+                <label for="original"> Original</label>
+            </div>
+            <div class="item">
+            <input type="checkbox" id="duplicate" name="duplicate" value="duplicate">
+            <label for="duplicate"> Duplicate</label>
+        </div>
+        <div class="item">
+            <input type="checkbox" id="triplicate" name="triplicate" value="triplicate">
+            <label for="triplicate"> Triplicate</label>
+        </div>
+        </form>
+    </div>
+    <div class="header">
+        <div class="logo">
+            <div class="heading">
+                <h1>Demo Company</h1>
+            </div>
+           
+        </div>
+        <div class="contact">
+         <div class="contact-inner">
+            <div class="contact-empty">
+                
+            </div>
+            <div class="contact-number">
+                <i class="fa fa-phone">hello</i>
+            </div>
+            <div class="contact-address">
+                1
+            </div>
+         </div>
+        </div>
+    </div>
+</body>
+</html>
