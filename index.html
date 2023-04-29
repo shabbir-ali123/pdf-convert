@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,69 +10,83 @@
 
 </head>
 <style>
-    body{
+    body {
         padding: 0;
         margin: 0;
-      
-			zoom: 50%; /* Scale the element by 150% */
-		
+color: #333333;
+font-family: Arial, Helvetica, sans-serif;
+        zoom: 45%;
+        /* Scale the element by 150% */
+
     }
-    .document-versions form{
+
+    .document-versions form {
         display: flex;
         flex-wrap: nowrap;
-        
+
     }
-    .document-versions{
-       float: right;
-      
+
+    .document-versions {
+        float: right;
+
     }
-    .item{
+
+    .item {
         padding: 20px;
     }
-    .header{
+
+    .header {
         display: flex;
         justify-content: center;
     }
-    .logo{
+
+    .logo {
         background-color: rgb(0, 0, 0);
         color: aliceblue;
-       height: 300px;
+        height: 200px;
         margin-top: 50px;
         width: 100%;
         border-radius: 40px 999em 999em 40px;
         margin-right: 200px;
-        }
-        .logo .heading{
-         margin-top: 220px;
-         font-size: 30px;
-        }
-    .contact{
+    }
+
+    .logo .heading {
+        margin-top: 100px;
+        font-size: 30px;
+    }
+
+    .contact {
         background-color: rgb(249, 0, 0);
-       height: 150px;
+        height: 100px;
         margin-top: 50px;
         width: 70%;
-        border-radius: 0px 00px 0px 100px ;
+        border-radius: 0px 00px 0px 100px;
         position: absolute;
         right: 0px;
     }
-    .contact-inner{
+
+    .contact-inner {
         height: 120px;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
     }
-       .contact-number{
-        color:white;
+
+    .contact-number {
+        color: white;
         font-size: 16px;
     }
-    .contact-address{
-        color:white;
+
+    .contact-address {
+        color: white;
         font-size: 16px;
     }
-    .main-info{
+
+    .main-info {
         display: flex;
     }
-    .tax-invoice{
+
+    .tax-invoice {
         font-size: 34px;
         height: 150px;
         margin-top: -114px;
@@ -82,135 +97,236 @@
 
 
     }
-    .tax-invoice p{
+
+    .tax-invoice p {
         font-weight: bolder;
     }
-    .tax-invoice .invoice{
-        
+
+    .tax-invoice .invoice {
+
         font-weight: 100;
     }
-    .tax-invoice .date{
-        display: inline-block;
-            margin-left: 20px;
-            font-weight: 100;
+
+    .tax-invoice .date {
+        /* display: inline-block; */
+        margin-left: 20px;
+        font-weight: 100;
     }
-    .personal-info{
+
+    .personal-info {
         color: black;
         font-size: 30px;
         margin-top: 20px;
         font-weight: 800;
         width: 85%;
-        
+        margin-left: 30px;
+
     }
-    .personal-info h2{
+
+    .personal-info h2 {
         color: red;
         font-size: 30px;
         font-weight: 300;
-        
-        
+
+
     }
-    
-        table {
-			border-collapse: collapse;
-			width: 100%;
-			margin: 20px 0;
-            border-radius: 30px 30px 0 0; /* border radius for top left and right corners */
-			overflow: hidden;
-          
-		}
-		
-		th, td {
-			border: 1px solid rgb(229, 229, 229);
-			padding: 10px;
-			text-align: center;
-		}
-		
-		th {
-			background-color: #ff0707;
-            color: #f5f5f5;
-		}
-		
-		tr:nth-child(even) {
-			background-color: #ffff;
-		}
-		
-		tr:hover {
-			background-color: #ddd;
-		}
-       .Footer.contact{
-        background-color: rgb(249, 0, 0);
-       height: 150px;
-        margin-top: 50px;
-        width: 70%;
-        border-radius: 0px 00px 0px 100px ;
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+       
+        border-radius: 30px 30px 0 0;
+        /* border radius for top left and right corners */
+        overflow: hidden;
+
+    }
+.table-content {
+    margin-top: 500px ;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+    th,
+    td {
+        border: 1px solid rgb(229, 229, 229);
+        padding: 10px;
+        text-align: center;
+    }
+
+    thead th {
+        background-color: #ff0707;
+        color: #f5f5f5;
+    }
+
+    tr:nth-child(even) {
+        background-color: #ffff;
+    }
+
+    tr:hover {
+        background-color: #ddd;
+    }
+
+    .Footer {
+        position: relative;
+        margin-top: 100px;
+    }
+
+    .Footer .left {
+        background-color: #ff0707;
+        height: 100px;
+
+    }
+
+    .Footer .right {
+        background-color: #0b0b0b;
+        height: 150px;
+        width: 60%;
         position: absolute;
-        right: 0px;
-       }
+        top: -50px;
+        right: 0;
+        border-radius: 150px 0px 0px 0px;
+    }
+.table-contents{
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+    .total {
+        background: #ff0707;
+        color: #ffff;
+        border-radius: 0px 0px 0px 30px;
+    }
+
+    .small-table {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+       
+        /* margin: 0px 30px; */
+
+    }
+
+    .small-table .left-div {
+        width: 40%;
+        padding-left: 30px;
+    }
+
+    .small-table .right-div {
+        width: 40%;
+        padding-right: 30px;
+        margin-top: 15px;
+    }
+
+
+    .right-table {
+        border-radius: 0;
+
+    }
+
+    .right-table tr {
+        background-color: #fff;
+    }
+
+    .chnage td {
+        background: #ff0707;
+        color: white;
+    }
+    .terms{
+        color: #ff0707;
+    }
+    .fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  background-color: #ffffff;
+  background: transparent;
+}
+.Footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+
+}
+.second-section{
+    margin-top: 30px;
+}
 </style>
+
 <body>
-    <div class="document-versions">
-        <form action="/action_page.php" class="document-versions">
-            <div class="item">
-                <input type="checkbox" id="original" name="original" value="original">
-                <label for="original"> Original</label>
+    <section class="hero-section">
+        <nav class="fixed-header">
+            <div class="document-versions">
+                <form action="/action_page.php" class="document-versions">
+                    <div class="item">
+                        <input type="checkbox" id="original" name="original" value="original">
+                        <label for="original"> Original</label>
+                    </div>
+                    <div class="item">
+                        <input type="checkbox" id="duplicate" name="duplicate" value="duplicate">
+                        <label for="duplicate"> Duplicate</label>
+                    </div>
+                    <div class="item">
+                        <input type="checkbox" id="triplicate" name="triplicate" value="triplicate">
+                        <label for="triplicate"> Triplicate</label>
+                    </div>
+                </form>
             </div>
-            <div class="item">
-            <input type="checkbox" id="duplicate" name="duplicate" value="duplicate">
-            <label for="duplicate"> Duplicate</label>
-        </div>
-        <div class="item">
-            <input type="checkbox" id="triplicate" name="triplicate" value="triplicate">
-            <label for="triplicate"> Triplicate</label>
-        </div>
-        </form>
-    </div>
-    <div class="header">
-        <div class="logo">
-            <div class="heading">
-                <h1>Demo Company</h1>
+            <div class="header">
+                <div class="logo">
+                    <div class="heading">
+                        <h1>Demo Company</h1>
+                    </div>
+    
+                </div>
+                <div class="contact">
+                    <div class="contact-inner">
+                        <div class="contact-empty">
+    
+                        </div>
+                        <div class="contact-number">
+                            <i class="fa fa-volume-control-phone"> | 7011283549</i>
+                        </div>
+                        <div class="contact-address">
+                            <i class="fa fa-map-marker"> | </i> <span>A-4 THird Floor Paschim Vihar New Delhi</span>
+                        </div>
+                    </div>
+                </div>
             </div>
            
+        </nav>
+      
         </div>
-        <div class="contact">
-         <div class="contact-inner">
-            <div class="contact-empty">
-                
-            </div>
-            <div class="contact-number">
-                <i class="fa fa-volume-control-phone"> | 7011283549</i>
-            </div>
-            <div class="contact-address">
-                <i class="fa fa-map-marker"> | </i> <span>A-4 THird Floor Paschim Vihar New Delhi</span>
-            </div>
-         </div>
-        </div>
-    </div>
-        <div class="main-info">
-        <div class="personal-info">
-                <h2 >Bill to:</h2>
+       
+        <div class="table-content">
+              <div class="main-info">
+            <div class="personal-info">
+                <h2>Bill to:</h2>
                 <h1>Madhur Jan</h1>
-        </div>
-        <div class="tax-invoice">
-            <div>
-                <h1>Tax Invoice</h1>
-                <p>Invoice No.:<span class="invoice">&emsp;1</span></p>
-                <p>Date.:<span class="date">&emsp;&emsp;&emsp;24/02/2023</span></p>
             </div>
-        </div>
-    <div class="table-content">
-        <table>
-            <thead>
-                <tr>
-                    <th>#</th>
-                    <th>Item name</th>
-                    <th>HSN/SAC</th>
-                    <th>Quantity</th>
-                    <th>Price/Unit</th>
-                    <th>Amount</th>
-                </tr>
-            </thead>
-            <tbody>
-                <!-- 31 rows -->
+            <div class="tax-invoice">
+                <div>
+                    <h1>Tax Invoice</h1>
+                    <p>Invoice No.:<span class="invoice">&emsp;1</span></p>
+                    <p>Date:<span class="date">&emsp;&emsp;&emsp;24/02/2023</span></p>
+                </div>
+            </div>
+            </div>
+            <table>
+                <thead class="main-head">
+                    <tr>
+                        <th>#</th>
+                        <th>Item name</th>
+                        <th>HSN/SAC</th>
+                        <th>Quantity</th>
+                        <th>Price/Unit</th>
+                        <th>Amount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- 31 rows -->
                 <tbody>
                     <!-- 31 rows -->
                     <tr>
@@ -218,265 +334,479 @@
                         <td>Sample item</td>
                         <td></td>
                         <td>10</td>
-                        <td>$100.00</td>
-                         <td>$100.00</td>
+                        <td>₹100.00</td>
+                        <td>₹100.00</td>
                     </tr>
                     <tr>
                         <td>2</td>
                         <td>Sample item</td>
                         <td></td>
                         <td>1</td>
-                        <td>$100.00</td>
-                         <td>$100.00</td>
+                        <td>₹100.00</td>
+                        <td>₹100.00</td>
                     </tr>
                     <tr>
                         <td>3</td>
                         <td>Sample item</td>
                         <td></td>
                         <td>1</td>
-                        <td>$100.00</td>
-                         <td>$100.00</td>
+                        <td>₹100.00</td>
+                        <td>₹100.00</td>
                     </tr>
                     <tr>
                         <td>4</td>
                         <td>Sample item</td>
                         <td></td>
                         <td>1</td>
-                        <td>$100.00</td>
-                         <td>$100.00</td>
+                        <td>₹100.00</td>
+                        <td>₹100.00</td>
                     </tr>
                     <tr>
                         <td>5</td>
                         <td>Sample item</td>
                         <td></td>
                         <td>1</td>
-                        <td>$100.00</td>
-                         <td>$100.00</td>
+                        <td>₹100.00</td>
+                        <td>₹100.00</td>
                     </tr>
                     <tr>
-                        <td>5</td>
+                        <td>6</td>
                         <td>Sample item</td>
                         <td></td>
                         <td>1</td>
-                        <td>$100.00</td>
-                         <td>$100.00</td>
+                        <td>₹100.00</td>
+                        <td>₹100.00</td>
                     </tr>
                     <tr>
-                        <td>5</td>
+                        <td>7</td>
                         <td>Sample item</td>
                         <td></td>
                         <td>1</td>
-                        <td>$100.00</td>
-                         <td>$100.00</td>
+                        <td>₹100.00</td>
+                        <td>₹100.00</td>
                     </tr>
                     <tr>
-                        <td>5</td>
+                        <td>8</td>
                         <td>Sample item</td>
                         <td></td>
                         <td>1</td>
-                        <td>$100.00</td>
-                         <td>$100.00</td>
+                        <td>₹100.00</td>
+                        <td>₹100.00</td>
                     </tr>
                     <tr>
-                        <td>5</td>
+                        <td>9</td>
                         <td>Sample item</td>
                         <td></td>
                         <td>1</td>
-                        <td>$100.00</td>
-                         <td>$100.00</td>
+                        <td>₹100.00</td>
+                        <td>₹100.00</td>
                     </tr>
                     <tr>
-                        <td>5</td>
+                        <td>10</td>
                         <td>Sample item</td>
                         <td></td>
                         <td>1</td>
-                        <td>$100.00</td>
-                         <td>$100.00</td>
+                        <td>₹100.00</td>
+                        <td>₹100.00</td>
                     </tr>
                     <tr>
-                        <td>5</td>
+                        <td>11</td>
                         <td>Sample item</td>
                         <td></td>
                         <td>1</td>
-                        <td>$100.00</td>
-                         <td>$100.00</td>
+                        <td>₹100.00</td>
+                        <td>₹100.00</td>
                     </tr>
                     <tr>
-                        <td>5</td>
+                        <td>12</td>
                         <td>Sample item</td>
                         <td></td>
                         <td>1</td>
-                        <td>$100.00</td>
-                         <td>$100.00</td>
+                        <td>₹100.00</td>
+                        <td>₹100.00</td>
                     </tr>
                     <tr>
-                        <td>5</td>
+                        <td>13</td>
                         <td>Sample item</td>
                         <td></td>
                         <td>1</td>
-                        <td>$100.00</td>
-                         <td>$100.00</td>
+                        <td>₹100.00</td>
+                        <td>₹100.00</td>
                     </tr>
                     <tr>
-                        <td>5</td>
+                        <td>14</td>
                         <td>Sample item</td>
                         <td></td>
                         <td>1</td>
-                        <td>$100.00</td>
-                         <td>$100.00</td>
+                        <td>₹100.00</td>
+                        <td>₹100.00</td>
                     </tr>
                     <tr>
-                        <td>5</td>
+                        <td>15</td>
                         <td>Sample item</td>
                         <td></td>
                         <td>1</td>
-                        <td>$100.00</td>
-                         <td>$100.00</td>
+                        <td>₹100.00</td>
+                        <td>₹100.00</td>
                     </tr>
                     <tr>
-                        <td>5</td>
+                        <td>16</td>
                         <td>Sample item</td>
                         <td></td>
                         <td>1</td>
-                        <td>$100.00</td>
-                         <td>$100.00</td>
+                        <td>₹100.00</td>
+                        <td>₹100.00</td>
                     </tr>
                     <tr>
-                        <td>5</td>
+                        <td>17</td>
                         <td>Sample item</td>
                         <td></td>
                         <td>1</td>
-                        <td>$100.00</td>
-                         <td>$100.00</td>
+                        <td>₹100.00</td>
+                        <td>₹100.00</td>
                     </tr>
                     <tr>
-                        <td>5</td>
+                        <td>18</td>
                         <td>Sample item</td>
                         <td></td>
                         <td>1</td>
-                        <td>$100.00</td>
-                         <td>$100.00</td>
+                        <td>₹100.00</td>
+                        <td>₹100.00</td>
                     </tr>
                     <tr>
-                        <td>5</td>
+                        <td>19</td>
                         <td>Sample item</td>
                         <td></td>
                         <td>1</td>
-                        <td>$100.00</td>
-                         <td>$100.00</td>
+                        <td>₹100.00</td>
+                        <td>₹100.00</td>
                     </tr>
                     <tr>
-                        <td>5</td>
+                        <td>20</td>
                         <td>Sample item</td>
                         <td></td>
                         <td>1</td>
-                        <td>$100.00</td>
-                         <td>$100.00</td>
+                        <td>₹100.00</td>
+                        <td>₹100.00</td>
                     </tr>
                     <tr>
-                        <td>5</td>
+                        <td>21</td>
                         <td>Sample item</td>
                         <td></td>
                         <td>1</td>
-                        <td>$100.00</td>
-                         <td>$100.00</td>
+                        <td>₹100.00</td>
+                        <td>₹100.00</td>
                     </tr>
                     <tr>
-                        <td>5</td>
+                        <td>22</td>
                         <td>Sample item</td>
                         <td></td>
                         <td>1</td>
-                        <td>$100.00</td>
-                         <td>$100.00</td>
+                        <td>₹100.00</td>
+                        <td>₹100.00</td>
                     </tr>
                     <tr>
-                        <td>5</td>
+                        <td>23</td>
                         <td>Sample item</td>
                         <td></td>
                         <td>1</td>
-                        <td>$100.00</td>
-                         <td>$100.00</td>
+                        <td>₹100.00</td>
+                        <td>₹100.00</td>
                     </tr>
                     <tr>
-                        <td>5</td>
+                        <td>24</td>
                         <td>Sample item</td>
                         <td></td>
                         <td>1</td>
-                        <td>$100.00</td>
-                         <td>$100.00</td>
+                        <td>₹100.00</td>
+                        <td>₹100.00</td>
                     </tr>
                     <tr>
-                        <td>5</td>
+                        <td>25</td>
                         <td>Sample item</td>
                         <td></td>
                         <td>1</td>
-                        <td>$100.00</td>
-                         <td>$100.00</td>
+                        <td>₹100.00</td>
+                        <td>₹100.00</td>
                     </tr>
                     <tr>
-                        <td>5</td>
+                        <td>26</td>
                         <td>Sample item</td>
                         <td></td>
                         <td>1</td>
-                        <td>$100.00</td>
-                         <td>$100.00</td>
+                        <td>₹100.00</td>
+                        <td>₹100.00</td>
                     </tr>
                     <tr>
-                        <td>5</td>
+                        <td>27</td>
                         <td>Sample item</td>
                         <td></td>
                         <td>1</td>
-                        <td>$100.00</td>
-                         <td>$100.00</td>
+                        <td>₹100.00</td>
+                        <td>₹100.00</td>
                     </tr>
                     <tr>
-                        <td>5</td>
+                        <td>28</td>
                         <td>Sample item</td>
                         <td></td>
                         <td>1</td>
-                        <td>$100.00</td>
-                        <td>$100.00</td>
+                        <td>₹100.00</td>
+                        <td>₹100.00</td>
                     </tr>
                     <tr>
-                        <td>5</td>
+                        <td>29</td>
                         <td>Sample item</td>
                         <td></td>
                         <td>1</td>
-                        <td>$100.00</td>
-                        <td>$100.00</td>
+                        <td>₹100.00</td>
+                        <td>₹100.00</td>
                     </tr>
                     <tr>
-                        <td>5</td>
+                        <td>30</td>
                         <td>Sample item</td>
                         <td></td>
                         <td>1</td>
-                        <td>$100.00</td>
-                        <td>$100.00</td>
+                        <td>₹100.00</td>
+                        <td>₹100.00</td>
                     </tr>
                     <tr>
-                        <td>5</td>
+                        <td>31</td>
                         <td>Sample item</td>
                         <td></td>
                         <td>1</td>
-                        <td>$100.00</td>
-                        <td>$100.00</td>
+                        <td>₹100.00</td>
+                        <td>₹100.00</td>
                     </tr>
-                    
+
                     <!-- add more rows... -->
                 </tbody>
-                
+
                 <!-- more rows... -->
-            </tbody>
-        </table>
-    </div>
-    <div class="Footer">
-        <div class="contact">
-       
+                </tbody>
+            </table>
         </div>
-        <div class="git">
-           
-           
+        <div class="Footer">
+            <div class="left">
+
+
+            </div>
+            <div class="right">
+
+            </div>
         </div>
-    </div>
+    </section>
+
+    <section class="second-section">
+        <div class="document-versions">
+            <form action="/action_page.php" class="document-versions">
+                <div class="item">
+                    <input type="checkbox" id="original" name="original" value="original">
+                    <label for="original"> Original</label>
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="duplicate" name="duplicate" value="duplicate">
+                    <label for="duplicate"> Duplicate</label>
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="triplicate" name="triplicate" value="triplicate">
+                    <label for="triplicate"> Triplicate</label>
+                </div>
+            </form>
+        </div>
+        <div class="header">
+            <div class="logo">
+                <div class="heading">
+                    <h1>Demo Company</h1>
+                </div>
+
+            </div>
+            <div class="contact">
+                <div class="contact-inner">
+                    <div class="contact-empty">
+
+                    </div>
+                    <div class="contact-number">
+                        <i class="fa fa-volume-control-phone"> | 7011283549</i>
+                    </div>
+                    <div class="contact-address">
+                        <i class="fa fa-map-marker"> | </i> <span>A-4 THird Floor Paschim Vihar New Delhi</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-info">
+
+            <div class="tax-invoice">
+                <div>
+                    <h1>Tax Invoice</h1>
+
+                </div>
+            </div>
+        </div>
+        <div class="table-contents">
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Item name</th>
+                        <th>HSN/SAC</th>
+                        <th>Quantity</th>
+                        <th>Price/Unit</th>
+                        <th>Amount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- 31 rows -->
+                <tbody>
+                    <!-- 31 rows -->
+                    <tr>
+                        <td>31</td>
+                        <td>Sample item</td>
+                        <td></td>
+                        <td>1</td>
+                        <td>₹100.00</td>
+                        <td>₹100.00</td>
+                    </tr>
+                    <tr>
+                        <td>32</td>
+                        <td>Sample item</td>
+                        <td></td>
+                        <td>1</td>
+                        <td>₹100.00</td>
+                        <td>₹100.00</td>
+                    </tr>
+                    <tr>
+                        <td>33</td>
+                        <td>Sample item</td>
+                        <td></td>
+                        <td>1</td>
+                        <td>₹100.00</td>
+                        <td>₹100.00</td>
+                    </tr>
+                    <tr>
+                        <td>34</td>
+                        <td>Sample item</td>
+                        <td></td>
+                        <td>1</td>
+                        <td>₹100.00</td>
+                        <td>₹100.00</td>
+                    </tr>
+                    <tr>
+                        <td>35</td>
+                        <td>Sample item</td>
+                        <td></td>
+                        <td>1</td>
+                        <td>₹100.00</td>
+                        <td>₹100.00</td>
+                    </tr>
+                    <tr>
+                        <td>36</td>
+                        <td>Sample item</td>
+                        <td></td>
+                        <td>1</td>
+                        <td>₹100.00</td>
+                        <td>₹100.00</td>
+                    </tr>
+                    <tr class="total">
+                        <td></td>
+                        <td>Total</td>
+                        <td></td>
+                        <td>45</td>
+                        <td></td>
+                        <td>₹4500.00</td>
+                    </tr>
+
+
+
+
+                    <!-- add more rows... -->
+                </tbody>
+
+                <!-- more rows... -->
+                </tbody>
+            </table>
+        </div>
+        <div class="small-table">
+            <div class="left-div">
+                <h2>Invoice Amount In Words</h2>
+                <p>Four Thousand Five Hundred Rupees only</p>
+                <div>
+                    <h2 class="terms">Terms And Conditions </h2>
+                    <p > <span class="terms">Terms and conditions</span>  <br>
+                        Our Company aims deal with its clientsin a professional,timely and favourable <br>
+                        manner. By engaging Our company with their <br>
+                        business, the clients will be accepting the following terms and conditions: <br>
+                        The Contract <br>
+                        *An independent contractor relationship will be created between the clinets and our <br>
+                        compnay, and that no partnership or joint. <br>
+                        venture is intended or implied by either party. <br>
+                        * A date of commencemnet of the services will be agreed upon by both parties , and <br>
+                        charges will be applicable according to that date, <br>
+                        *Amonthly report of performance services will be given to the clients. <br>
+                        *Either party may not cancel or fully transfer the service responsibilities to another <br>
+                        service vendor before a prior notice of at least ten. <br>
+                        business days <br>
+                        *A person who is not a party to the contract shall not have any rights under or in <br>
+                        connection with it. <br>
+                        payments <br>
+                        * if our company and the client agree on fixed quote regarding any services, then they <br>
+                        are liable to pay 50% of the billable amount in , <br>
+                        advance . prior to the commencement of the work. The remaining amount will be <br>
+                        payable as <br>
+                        25% of the amount at the time of 75% of the work completion. <br>
+                        The balance of 25% should be paid at the same time of work submission. <br>
+                        *Our company shall invoice the clients monthly , in advance <br>
+                        *Also, if the clients do not pay a monthly invoice when it is due, Our company will <br>
+                        terminate the services within 10 days.
+                    </p>
+                    <p style="margin-left: 90px; margin-top: 20px;">For Demo company</p>
+                    <textarea style="margin-left: 30px; color: #333333; " id="myTextarea" name="myTextarea" rows="4" cols="30"></textarea>
+                    <div style="border: 1px solid gray; margin-bottom: 200px; width: 25%; margin-left: 10px;"></div>
+                </div>
+            </div>
+            <div class="right-div">
+
+                <table class="right-table">
+                    <tr class="sub-total">
+                        <th>Sub Total</th>
+                        <th>₹4500.00</th>
+                    </tr>
+                    <tr class="chnage">
+                        <td class="total">Total</td>
+                        <td>₹4500.00</td>
+                    </tr>
+                    <tr>
+                        <td>Received</td>
+                        <td>₹0.00</td>
+                    </tr>
+                    <tr>
+                        <td>Balance</td>
+                        <td>₹4500.00</td>
+                    </tr>
+
+                </table>
+            </div>
+            <div class="Footer">
+                <div class="left">
+
+
+                </div>
+                <div class="right">
+
+                </div>
+            </div>
+        </div>
+        <div class="Footer">
+            <div class="left">
+
+
+            </div>
+            <div class="right">
+
+            </div>
+        </div>
+    </section>
+
 </body>
+
 </html>
