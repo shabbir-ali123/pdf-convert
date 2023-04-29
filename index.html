@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <style>
     body{
@@ -59,6 +60,57 @@
         justify-content: space-evenly;
         align-items: center;
     }
+    .contact-number{
+        color:white;
+        font-size: 16px;
+    }
+    .contact-address{
+        color:white;
+        font-size: 16px;
+    }
+    .main-info{
+        display: flex;
+    }
+    .tax-invoice{
+        font-size: 34px;
+        height: 150px;
+        margin-top: -114px;
+        width: 18%;
+        /* border-radius: 0px 0px 0px 100px; */
+        position: absolute;
+        right: 0px;
+
+
+    }
+    .tax-invoice p{
+        font-weight: bolder;
+    }
+    .tax-invoice .invoice{
+        
+        font-weight: 100;
+    }
+    .tax-invoice .date{
+        display: inline-block;
+            margin-left: 20px;
+            font-weight: 100;
+    }
+    .personal-info{
+        color: black;
+        font-size: 30px;
+        margin-top: 20px;
+        font-weight: 800;
+        width: 85%;
+        
+    }
+    .personal-info h2{
+        color: red;
+        font-size: 30px;
+        font-weight: 300;
+        
+        
+    }
+    
+    
 </style>
 <body>
     <div class="document-versions">
@@ -90,12 +142,25 @@
                 
             </div>
             <div class="contact-number">
-                <i class="fa fa-phone">hello</i>
+                <i class="fa fa-volume-control-phone"> | 7011283549</i>
             </div>
             <div class="contact-address">
-                1
+                <i class="fa fa-map-marker"> | </i> <span>A-4 THird Floor Paschim Vihar New Delhi</span>
             </div>
          </div>
+        </div>
+    </div>
+    <div class="main-info">
+        <div class="personal-info">
+                <h2 >Bill to:</h2>
+                <h1>Madhur Jan</h1>
+        </div>
+        <div class="tax-invoice">
+            <div>
+                <h1>Tax Invoice</h1>
+                <p>Invoice No.:<span class="invoice">&emsp;1</span></p>
+                <p>Date.:<span class="date">&emsp;&emsp;&emsp;24/02/2023</span></p>
+            </div>
         </div>
     </div>
 </body>
